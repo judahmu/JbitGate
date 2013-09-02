@@ -1,0 +1,3 @@
+This project is a proof-of-concept using Heirarchical Deterministic Keys ([BIP 32](https://en.bitcoin.it/wiki/BIP_0032)) in a J2EE environment.  It uses [BitcoinJ](https://code.google.com/p/bitcoinj/) 0.10 for the bitcoin protocol.   
+
+A private key tree is created (in practice this needs to be created locally). A public key tree is created from a branch off the private tree. Addresses are created off the public key tree and displayed for each web request.  A Watch-only wallet is created to handle incoming coins.  A ping service is used in conjunction with the private key tree to return coins to testers.  This project runs on TestNet3. Use at your own risk.
